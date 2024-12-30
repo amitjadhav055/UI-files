@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwcXQt_-D0GlH4F-Q5JzdsDW-cAUhkYde2A&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    /* background-color: black; */
+    border-radius: 10%;
+    transition: height 2s ease,  width 1s ease-in, background-color 2s ease-in-out;
+    border: 1px solid gray;
+    background-image: url("https://media.wired.com/photos/62feb60bcea7c0581e825cb0/16:9/w_2400,h_1350,c_limit/Fate-of-Game-Preservation-Games-GettyImages-1170073827.jpg");
+    background-size: cover;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.box:hover{
+    height: 500px;
+    width: 700px;
+    /* background-color: blue; */
+    /* background: linear-gradient(to right black, gray, white); */
+    box-shadow: 10px 12px 10px palevioletred;
+}
+
+
+@keyframes bounce{
+    0%{
+        transform:translate(0) ;
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
